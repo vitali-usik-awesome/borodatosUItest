@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* reset */
+* {padding:0; margin:0;}
+img {border:0 none;}
+div {display:block; position:relative;}
+ul {list-style: none;}
+.hidden {display: none;}
+.clr:after {display:none; position:relative; content:' '; color:transparent; font-size:0; line-height:0; clear:both;}
+
+body {background: #000;}
+
+/* wrapper */
+.wrapper {max-width: 1200px; margin: 0 auto; background: #fff; height: 500px;}
+
+header {background: gray; width: 100%;}
+	.h_logo {overflow: hidden; width: 100%;}
+	.h_logo .logo {float: left; width: 16.66666666666667%; margin: 0.2%;} /* 200/1200 */
+	.h_logo .logo img {max-width: 100%;}
+
+	.h_logo .social {float: left;}
+
+	.h_logo .search {float: left; width: 16.66666666666667%; margin: 2% 0.2%;}
+	.h_logo .search input {max-width: 100%; width: 200px;}
+
+
+
+
+
+
+
+
+
+
+
