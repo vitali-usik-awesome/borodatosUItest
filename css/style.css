@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* reset */
+/* reset by medic */
 * {padding:0; margin:0;}
 img {border:0 none;}
 div {display:block; position:relative;}
@@ -8,28 +8,39 @@ ul {list-style: none;}
 .hidden {display: none;}
 .clr:after {display:none; position:relative; content:' '; color:transparent; font-size:0; line-height:0; clear:both;}
 
+/* media */
+@media only screen and (max-width: 800px) {
+	.hLogo .social {display: none;}
+	.hLogo .search {display: none;}
+	.hLogo .logo {}
+}
+
+@media only screen and (max-width: 480px) {
+	.nav {display: none;}
+} 
+
 body {background: #000;}
 
 /* wrapper */
 .wrapper {max-width: 1200px; margin: 0 auto; background: #fff; height: 500px;}
 
 header {background: gray; width: 100%;}
-.h_logo {overflow: hidden; width: 100%;}
-	.h_logo .logo {float: left; width: 16.66666666666667%; margin: 0.2%;} /* 200/1200 */
-	.h_logo .logo img {max-width: 100%;}
+.hLogo {overflow: hidden; width: 100%;}
+	.hLogo .logo {float: left; width: 20em; margin: 0.5em;} /* 200/16 */
+	.hLogo img {max-width: 100%;}
 
-	.h_logo .social {float: left; width: 16.66666666666667%; margin: 5% 0.2% 5% 49%;} /* 200/1200 */
-	.h_logo .social ul {}
-	.h_logo .social li {display: inline-block; width: 20px; text-align: center; margin-right: 5%;}
-	.h_logo .social  a {display: block; position: relative; text-decoration: none; color: #000;} 
+	.hLogo .social {float: right; width: 10em; margin: 2em 0;} /* 200/16 */
+	.hLogo .social ul {text-align: center;}
+	.hLogo .social li {display: inline-block; margin-right: 1em;}
+	.hLogo .social a {display: block; position: relative; text-decoration: none; color: #000;} 
 
-	.h_logo .search {float: right; width: 16.66666666666667%; margin: 5% 0.2%;} /* 200/1200 */
-	.h_logo .search input {max-width: 100%; width: 200px;}
+	.hLogo .search {float: right; width: 12.5em; margin: 2em 3em;} /* 200/16 */
+	.hLogo .search input {max-width: 100%; width: 200px;}
 
 
 .nav {width: 100%;}
-	.nav ul {font-size: 1.2em; width: 50%; margin: 0 auto;}
-	.nav li {display: inline-block; text-align: center; padding: 0 1%; border-right: 1px solid #000;}
+	.nav ul {font-size: 1.2em; width: 50%; margin: 0 auto; text-align: center;}
+	.nav li {display: inline-block; padding: 0 0.5em; border-right: 0.1em solid #000;}
 	.nav a {display: block; position: relative; text-decoration: none; color: #000;}
 
 
