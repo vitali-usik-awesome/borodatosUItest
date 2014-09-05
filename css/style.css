@@ -45,6 +45,17 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
 	nav a:hover, nav a:active {background-color: gray;}
 	nav a#pull {display: none;}
 
+/* content */
+.content {background: #fff; width: 100%; padding-top: 2em;}
+
+/* popular */
+.popular_wrapper {width: 100%;}
+	.popular_wrapper ul {text-align: center; margin: 0 auto; width: 100%; height: auto; overflow: hidden;}
+	.popular_wrapper li {display: block; float: left; height: 100%; width: 50%; margin-right: 0.1em;}
+	.popular_wrapper li:last-child {margin-right: 0em;}
+	.popular_wrapper li a {width: 100%;}
+		
+		.thumbs_big_wrapper {width: 100%;}
 
 
 
