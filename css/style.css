@@ -19,7 +19,7 @@ body {background: #000;}
 
 
 /* wrapper */
-.wrapper {max-width: 1200px; margin: 0 auto; background: #fff; height: 500px;}
+.wrapper {max-width: 1200px; margin: 0 auto; background: #fff;}
 
 /* header */
 header {background-color: #fff; width: 100%;}
@@ -52,19 +52,31 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
 .popular_wrapper {width: 100%;}
 	.popular_wrapper ul {text-align: center; margin: 0 auto; width: 100%; height: auto; overflow: hidden;}
 	.popular_wrapper li:last-child {margin-right: 0em;}
-	.popular_wrapper li {display: block; position: relative; float: left; height: 100%; margin-right: 0.2em; width: 49.6%;}
-	.popular_wrapper li a {width: 100%;}
+	.popular_wrapper li {display: block; position: relative; float: left; height: 100%;}
+	.popular_wrapper li a {width: 100%; text-decoration: none; color: #000;}
+	.popular_wrapper li a:hover {text-decoration: underline;}
 	.popular_wrapper li a img {max-width: 100%;}
 		
-		.thumbs_big_wrapper {width: 100%;}
+		.thumbs_big_wrapper {padding-bottom: 2em;}
+		.thumbs_big_wrapper li {margin-right: 0.2em; width: 49.6%;}
+		.thumbs_big_wrapper h2 {margin-top: -3.125em; font-size: 1em;}
+
+		.thumbs_small_wrapper {padding-bottom: 1em;}
+		.thumbs_small_wrapper li {margin-right: 0.1em; width: 33.1%;}
+		.thumbs_small_wrapper h2 {margin-top: -3.125em; font-size: 0.9em;}
 
 
 
 /* media */
+@media screen and (max-width: 1058px) {
+	.thumbs_big_wrapper h2 {margin-top: -4em;}
+}
+
+
 @media screen and (max-width: 800px) {  
+    
     .hLogo .social {display: none;}
 	.hLogo .search {display: none;}
-	.hLogo .logo {}
 
     nav {height: auto;}  
 /*    	nav ul {width: 100%; display: block; height: auto;}  */
@@ -75,6 +87,8 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
     	nav ul {display: none; height: auto;}  
     	nav a#pull {display: block; background-color: gray; width: 100%; position: relative;}  
     	nav a#pull:after {content:""; background: url('../img/nav-icon.png') no-repeat; width: 30px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 10px;}  
+
+    .thumbs_small_wrapper h2 {font-size: 0.7em;}
 }
 
 @media only screen and (max-width: 480px) {  
@@ -84,6 +98,11 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
     	nav a#pull:after {content:""; background: url('../img/nav-icon.png') no-repeat; width: 30px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 10px;}
 
     .popular_wrapper li {width: 100%; margin-right: 0em;}
+
+    	.thumbs_big_wrapper {padding-bottom: 0em;}
+    	.thumbs_big_wrapper h2 {margin-top: 0; font-size: 0.8em;}
+
+    	.thumbs_small_wrapper h2 {margin-top: 0; font-size: 0.8em;}
 }
 
 
