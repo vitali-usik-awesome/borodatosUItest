@@ -65,6 +65,12 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
 		.thumbs_small_wrapper li {margin-right: 0.1em; width: 33.1%;}
 		.thumbs_small_wrapper h2 {margin-top: -3.125em; font-size: 0.9em;}
 
+/* music */
+.music_wrapper {width: 100%; margin-top: 2em;}
+	.music_header {width: 100%; background-color: #c7c5c5; height: 3em;}
+		.music_head_name {width: 8em; background-color: #afadad;}
+		.music_head_name a {text-transform: uppercase; line-height: 3em; text-align: center; text-decoration: none; color: #000; margin-left: 1.5em; cursor: pointer; font-weight: bold;}
+		.music_head_name a:hover {text-decoration: underline;}
 
 
 /* media */
