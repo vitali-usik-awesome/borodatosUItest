@@ -66,11 +66,37 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
 		.thumbs_small_wrapper h2 {margin-top: -3.125em; font-size: 0.9em;}
 
 /* music */
-.music_wrapper {width: 100%; margin-top: 2em;}
+.music_wrapper {width: 100%; margin: 2em 0em;}
 	.music_header {width: 100%; background-color: #c7c5c5; height: 3em;}
 		.music_head_name {width: 8em; background-color: #afadad;}
 		.music_head_name a {text-transform: uppercase; line-height: 3em; text-align: center; text-decoration: none; color: #000; margin-left: 1.5em; cursor: pointer; font-weight: bold;}
 		.music_head_name a:hover {text-decoration: underline;}
+
+	.music_content {width: 100%; overflow: hidden; margin-top: 1em; /*max-height: 450px;*/}
+		.music_column {display: block; position: relative; float: left; width: 24.5%; padding: 0 0.25%; height: 100%;}
+		.music_column a {width: 100%; text-decoration: none; color: #000;}
+		.music_column a:hover {text-decoration: underline;}
+		.music_column a img {max-width: 100%;}
+
+		.music_column .column2 {height: 100%; width: 100%; max-height: 224px; margin-bottom: 1%;}
+		.music_column .column2 a img {max-width: 100%;}
+		.music_column .column2:last-child {margin-bottom: 0%;}
+
+/* comics */
+.comics_wrapper {width: 100%; margin: 2em 0em;}	
+	.comics_header {width: 100%; background-color: #c7c5c5; height: 3em;}
+		.comics_head_name {width: 8em; background-color: #afadad;}
+		.comics_head_name a {text-transform: uppercase; line-height: 3em; text-align: center; text-decoration: none; color: #000; margin-left: 1.5em; cursor: pointer; font-weight: bold;}
+		.comics_head_name a:hover {text-decoration: underline;}
+
+	.comics_content {width: 100%; overflow: hidden; margin-top: 1em; /*max-height: 450px;*/}
+		.comics_column {display: block; position: relative; float: left; width: 24.5%; padding: 0 0.25%; height: 100%;}
+		.comics_column a {width: 100%; text-decoration: none; color: #000;}
+		.comics_column a:hover {text-decoration: underline;}
+		.comics_column a img {max-width: 100%;}
+
+
+
 
 
 /* media */
