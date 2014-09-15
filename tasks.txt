@@ -1,2 +1,2 @@
 1. write own reset
-2. 
+2. determinate global styles for text
