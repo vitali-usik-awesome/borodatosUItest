@@ -95,7 +95,16 @@ nav {height: 40px; width: 100%; background: #fff; font-size: 1.2em; font-weight:
 		.section_column_big .column2hor .culumn2hor_small a img {max-width: 100%;}
 		.section_column_big .column2hor .culumn2hor_small:last-child {margin-right: 0%;}
 
+/* footer */
+footer {width: 100%; overflow: hidden; padding: 2em 0; border-top: 1px solid #000;}
+	.footer_column {display: block; position: relative; float: left; width: 100%; max-width: 224px; margin: 0 0.5em;}
+	.footer_column a {}
+	.footer_column a img {max-width: 100%; height: auto;}
 
+	.footer_column .f_social ul {text-align: center; width: 100%;}
+	.footer_column .f_social li {display: inline-block; margin-right: 1em;}
+	.footer_column .f_social a {display: block; position: relative; text-decoration: none; color: #000;}
+	.footer_column .f_copyright {margin-top: 2em; text-align: center;}
 
 
 
